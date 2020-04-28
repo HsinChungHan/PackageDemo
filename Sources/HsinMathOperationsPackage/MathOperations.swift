@@ -17,7 +17,7 @@ public class MathOperations {
         case subtraction
         case multiplication
         case division
-        case none
+        case noneOperation
     }
     
     
@@ -27,7 +27,7 @@ public class MathOperations {
     
     private(set) var result: Double?
 
-    public var operation: Operation = .none
+    public var operation: Operation = .noneOperation
     
     public var op1: Double?
     
@@ -60,7 +60,7 @@ public class MathOperations {
         case .subtraction: result = op1 - op2
         case .multiplication: result = op1 * op2
         case .division: result = op1 / op2
-        case .none: break
+        case .noneOperation: break
         }
         
         self.op1 = result
@@ -71,7 +71,7 @@ public class MathOperations {
         op1 = nil
         op2 = nil
         result = nil
-        operation = .none
+        operation = .noneOperation
     }
     
     
